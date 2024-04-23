@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sean-serif';
+}
+
+@font-face  {
+    font-family: 'parlour';
+    src: url('./font/ParlourSansRegular.otf');
+    font-family: 'comforta';
+    src: url(./font/Comfortaa-Regular.ttf);
+}
+
+body {
+    background-color: black;
+    
+}
+
+#inicio {
+    height: 91vh;
+    background-color: #000000b3;
+    position: relative;
+}
+
+#inicio::before {
+    content: '';
+    width: 100vw;
+    height: 90vh;
+    background: url('./img/bg1.jpg');
+    background-size: cover;
+    filter: blur(2px);
+    position: absolute;
+    z-index: -1;
+}
+
+#menu {
+    display: flex;
+    height: 10vh;
+    padding-right: 15vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0000009a;
+    padding-bottom: 2vh;
+    position: relative;
+    transition: transform 600ms linear;
+}
+/* toggle do javascript*/
+.menu {
+    transform: translateY(-20vh);
+}
+/* toggle do javascript*/
+#menu-icon {
+    right: 5vw;
+    top: 1vh;
+    position: fixed;
+}
+
+#menu-icon div {
+    width: 15vw;
+    margin-top: 2vh;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #b6872e;
+    font-size: 4vw;
+    font-family: 'comforta';
+}
+
+h1 {
+    font-family: 'parlour';
+    color: #b6872e;
+    text-align: center;
+    font-size: 14vw;
+    margin-top: 10vh;
+}
+
+#inicio legend {
+    text-align: center;
+    color: #b6872e;
+    font-family: 'comforta';
+    font-size: 5vw;
+}
+
+#inicio button {
+    width: 45vw;
+    height: 7vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #b6872e;
+    background: transparent;
+    border: 2px solid #b6872e;
+    border-radius: 3px;
+    font-family: 'comforta';
+    font-size: 4vw;
+    margin-top: 15vh;
+}
+
+#inicio button:hover:before {
+    content: '';
+    height: 6vh;
+    border-bottom: 1px solid purple;
+    background: purple;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    animation: porcentagem 1s linear;
+}
+
+@keyframes porcentagem {
+    0% {
+        width: 5vw;
+    }
+    
+    10% {
+        width: 15vw;
+    }
+    
+    30% {
+        width: 25vw;
+    }
+    
+    60% {
+        width: 35vw;
+    }
+    
+    100% {
+        width: 45vw;
+    }
+}
+
+#horario {
+    width: 100vw;
+    position: absolute;
+    bottom: 2vh;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+#galeria {
+    height: 100vh;
+    position: relative;
+}
+
+#galeria h2 {
+    color: #b6872e;
+    font-size: 7vw;
+    padding-top: 8vh;
+    padding-left: 3vh;
+    font-family: 'parlour';
+}
+
+#galeria legend {
+    color: #b6872e;
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 2vh;
+}
+
+#galeria-fotos {
+    display: flex;
+    overflow-x: scroll;
+    padding-left: 4vh;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+#galeria-fotos div {
+    border: 1px solid whitesmoke;
+    min-width: 30vw;
+    height: 20vh;
+    margin-right: 5vw;
+    border-radius: 2px;
+    
+    
+    background-repeat: no-repeat;
+    
+}
+
+.linha {
+    border: 1px solid #b6872e;
+    width: 80vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+}
+
+#galeria dialog {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: #000000ee;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#box-fechar-dialog {
+    position: absolute;
+    right: 3vw;
+    display: grid;
+    transform: translateY(5vh);
+}
+
+#box-fechar-dialog span {
+    width: 15vw;
+    border: 1px solid white;
+}
+
+#box-fechar-dialog span:nth-child(1) {
+    transform: rotate(50deg);
+}
+#box-fechar-dialog span:nth-child(2) {
+    transform: rotate(-50deg);
+}
+
+
+
+
+
+
+
+
+
+
+#contato {
+    height: 40vh;
+    border-top: 1px solid #b6872e;
+    color: #b6872e;
+    font-family: 'comforta';
+    padding: 2vh 0 0 3vw;
+}
+
+#contato h2 {
+    margin-bottom: 4vh;
+    font-size: 7vw;
+}
+
+.dados-info {
+    margin-top: 1vh;
+}
+
+#dados {
+    margin-top: 6vh;
+}
+
+#contato a {
+    text-decoration: none;
+    color: #b6872e;
+    margin-top: 1vh;
+}
+
+#box-redes {
+    display: flex;
+    margin-top: 3vh;
+}
+
+#box-redes img {
+    margin-left: 2vw;
+}
