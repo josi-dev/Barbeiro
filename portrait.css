@@ -158,7 +158,8 @@ h1 {
 #galeria h2 {
     color: #b6872e;
     font-size: 7vw;
-    padding-top: 8vh;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
     padding-left: 3vh;
     font-family: 'parlour';
 }
@@ -173,6 +174,7 @@ h1 {
 #galeria-fotos {
     display: flex;
     overflow-x: scroll;
+    scrollbar-width: none;
     padding-left: 4vh;
     margin-top: 50%;
     transform: translateY(-50%);
@@ -181,13 +183,10 @@ h1 {
 #galeria-fotos div {
     border: 1px solid whitesmoke;
     min-width: 30vw;
-    height: 20vh;
+    height: 30vw;
     margin-right: 5vw;
     border-radius: 2px;
-    
-    
     background-repeat: no-repeat;
-    
 }
 
 .linha {
