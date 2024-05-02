@@ -45,11 +45,13 @@ body {
     position: relative;
     transition: transform 600ms linear;
 }
+
 /* toggle do javascript*/
 .menu {
     transform: translateY(-20vh);
 }
 /* toggle do javascript*/
+
 #menu-icon {
     right: 5vw;
     top: 1vh;
@@ -102,8 +104,8 @@ h1 {
 #inicio button:hover:before {
     content: '';
     height: 6vh;
-    border-bottom: 1px solid purple;
-    background: purple;
+    border-bottom: 1px solid green;
+    background: green;
     position: absolute;
     left: 0;
     top: 0;
